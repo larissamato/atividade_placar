@@ -4,23 +4,20 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js"></script>
-        <title>Brasil versus Alemanha</title>
+        <title>7X1</title>
     </head>
     <body>
-        <header>
-            <h1>APOSTE GRÁTIS</h1>
-        </header>
-        <main>
-            <form id="container-form">
-                <label for="input-brasil">Brasil:</label>
-                <input id="input-brasil" type="number" name="input-alemanha" max="10" required> 
-                <label for="input-alemanha">Alemanha:</label>
-                <input id="input-alemanha" type="number" name="input-alemanha" max="10" required> 
-                <button type="submit" id="send-button"></button>
-                <button type="button" id="refresh-button"></button>
-            </form>
-            <p id="tips"></p>
-            <p id="error"></p>
-        </main>
+        <h1>Adivinhe o Placar</h1>
+        <form id="game-form">
+            <label for="brasil-score">Placar do Brasil:</label>
+            <input type="number" id="brasil-score" min="0" max="10" required>
+            <label for="alemanha-score">Placar da Alemanha:</label>
+            <input type="number" id="alemanha-score" min="0" max="10" required>
+            <button type="submit" id="submit-button">Palpite</button>
+            <button type="button" id="restart-button">Iniciar Jogo</button>
+        </form>
+        <p id="result"></p>
+        <p id="tips"></p>
     </body>
 </html>
+
